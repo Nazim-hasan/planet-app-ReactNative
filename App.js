@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from "react-native";
 import { Colors } from "./src/Theme/Colors";
 import { Spacing } from "./src/Theme/Spacing";
 import { useFonts } from "expo-font";
+import { Typography } from "./src/Theme/Typography";
 
 export default function App() {
   const [loaded] = useFonts({
@@ -15,7 +16,7 @@ export default function App() {
   }
   return (
     <View style={styles.container}>
-      <Text style={{ fontFamily: "Spartan-Regular", fontSize: Spacing[5] }}>
+      <Text style={{ fontFamily: Typography.bold, fontSize: Spacing[5] }}>
         Open up App.js to start working on your app!
       </Text>
       <Text style={{ marginTop: Spacing[5] }}>Hello World</Text>
