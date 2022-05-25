@@ -9,6 +9,7 @@ import { NavigationContainer, DarkTheme } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Home from "./src/Screens/Home";
 import { SafeAreaView } from "react-native-safe-area-context";
+import Details from "./src/Screens/Details";
 
 const Stack = createNativeStackNavigator();
 export default function App() {
@@ -24,6 +25,7 @@ export default function App() {
     <NavigationContainer theme={DarkTheme}>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Details" component={Details} />
       </Stack.Navigator>
     </NavigationContainer>
   );
